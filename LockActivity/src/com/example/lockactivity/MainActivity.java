@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.util.Log;
 import android.view.Menu;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
@@ -32,15 +33,19 @@ public class MainActivity extends Activity {
                 switch(current) {
                 case Configuration.ORIENTATION_LANDSCAPE:
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+                    Log.d("MyApp", "â°");
                     break;
                 case Configuration.ORIENTATION_PORTRAIT:
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                    Log.d("MyApp", "èc");
                     break;
                 default:
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+                    Log.d("MyApp", "ÇªÇÃÇ‹Ç‹");
                 }
             } else {
                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+                Log.d("MyApp", "ÇªÇÃÇ‹Ç‹");
             }
         }
     };
