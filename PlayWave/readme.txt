@@ -7,3 +7,5 @@ Apress Android プログラミングレシピ
 MediaPlayerを使ったローカルのWavファイルの再生
 
 Click音を想定しているので、毎回Releaseしなくてもいいようにしました。
+
+クリック音の音声ファイルは上げてません。
