@@ -67,8 +67,6 @@ public class MainActivity extends Activity {
 		this._mediarecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
 		this._mediarecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
 		this._mediarecorder.setOutputFile(this._path.getAbsolutePath());
-		
-
 	}
 	
 	public void btnStrat_onCLick(View view) {
